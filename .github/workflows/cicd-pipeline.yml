@@ -31,7 +31,7 @@ jobs:
       shell: bash
       run: cp ./.github/workflow/.npmrc ./
     - name: Publish
-    - run: npm publish
+      run: npm publish
 
     
 
