@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "outDir": "./lib",
+      "allowJs": true,
+      "target": "es2015",
+      "types": ["node", "jest"],
+      "module": "commonjs",
+      "lib": [
+        "es2018",
+        "dom"
+      ]
+    },
+    "include": ["./src/**/*"]
+  }
