@@ -42,10 +42,13 @@ loggerWithStaticInfo.info("Goodbye!");
 
 ### Loglevels
 
-1. ERROR
-2. WARN
-3. INFO
-4. DEBUG
+
+|PRIO|NAME|EMOJI|
+|---|---|---|
+| 1 | ERROR | :no_entry_sign: |
+| 2 | WARN  | :warning: |
+| 3 | INFO  | :information_source: |
+| 4 | DEBUG | :space_invader: |
 
 
 ## CONTRIBUTORS
@@ -53,4 +56,5 @@ Feel free to contribute - pull requests and issues are welcome :)
 
 ## LICENSE
 MIT License
+
 [SEE LICENSE FILE](LICENSE)
