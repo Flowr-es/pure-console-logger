@@ -18,7 +18,7 @@ ___
 
 ### Usage example
 
-A simple example how to use this module. Copied from here [example.ts](src/example.ts)
+A simple example how to use this module. Copied from here [example.ts](test/example.ts)
 ```typescript
 import { Logger, setLoglevel } from "pure-console-logger";
 const logger = new Logger(__filename);
