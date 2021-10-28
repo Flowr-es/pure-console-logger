@@ -1,8 +1,14 @@
-const originalConsole = console.log;
+const originalConsoleLog = console.log;
+const originalConsoleError = console.error;
 let lastLog: string;
 console.log = (input: string) => {
     lastLog = input;
-    originalConsole(input);
+    originalConsoleLog(input);
+}
+let lastLogError: string;
+console.error = (input: string) => {
+    lastLogError = input;
+    originalConsoleLog(input);
 }
 
 import { Logger, setLoglevel } from "../src/index";
@@ -50,12 +56,9 @@ test("logging content", () =>{
     expect(lastLog).toContain("TEST CONTENT");
 });
 
-// setLoglevel("INFO"); // Sets the loglevel globally
-// logger.debug("This is not logged!")
-// logger.info(JSON.stringify({ foo: "bar" }));
-// logger.warn("This is a warning!", { meta: "data", appended: "to the log string" });
-// logger.error("Oops!");
-// logger.error(new Error("something bad happended"));
-
-// const loggerWithStaticInfo = new Logger("custom name", { user: "zuse" });
-// loggerWithStaticInfo.info("Goodbye!");
+test("logging error", () =>{
+    const logger = new Logger(__filename);
+    const logInput = new Error("TEST CONTENT ERROR")
+    logger.error(logInput);
+    expect(lastLogError).toContain(logInput.message);
+});

@@ -1,4 +1,4 @@
-import { Logger, setLoglevel } from "./index";
+import { Logger, setLoglevel } from "./../src/index";
 const logger = new Logger(__filename);
 
 setLoglevel("INFO"); // Sets the loglevel globally

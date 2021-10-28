@@ -27,6 +27,9 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+    - name: Add .npmrc for publish
+      shell: bash
+      run: cp ./.github/workflow/.npmrc ./
     - name: Publish
     - run: npm publish
 
