@@ -11,7 +11,13 @@ Yet antoher logger, nobody asked for.
 
 Super simple & provides good human debugable logs to the console.
 
-Easy to use, small focus - very useful for small "diy" projects.
+Easy to use, small focus - very useful for small "DIY" projects.
+
+```css
+2021-10-28T08:37:53.458Z INFO: [MAIN] Starting server -
+2021-10-28T08:37:53.541Z DEBUG: [SERVER] Server started and listening on port 3000 -
+```
+
 ___
 
 ## Usage
@@ -36,15 +42,19 @@ loggerWithStaticInfo.info("Goodbye!");
 
 ### Loglevels
 
-1. ERROR
-2. WARN
-3. INFO
-4. DEBUG
+
+|PRIO|NAME|EMOJI|
+|---|---|---|
+| 1 | ERROR | :no_entry_sign: |
+| 2 | WARN  | :warning: |
+| 3 | INFO  | :information_source: |
+| 4 | DEBUG | :space_invader: |
 
 
 ## CONTRIBUTORS
 Feel free to contribute - pull requests and issues are welcome :)
 
 ## LICENSE
+MIT License
 
-SEE LICENSE FILE
+[SEE LICENSE FILE](LICENSE)
