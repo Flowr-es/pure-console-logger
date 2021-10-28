@@ -11,7 +11,13 @@ Yet antoher logger, nobody asked for.
 
 Super simple & provides good human debugable logs to the console.
 
-Easy to use, small focus - very useful for small "diy" projects.
+Easy to use, small focus - very useful for small "DIY" projects.
+
+```css
+2021-10-28T08:37:53.458Z INFO: [MAIN] Starting server -
+2021-10-28T08:37:53.541Z DEBUG: [SERVER] Server started and listening on port 3000 -
+```
+
 ___
 
 ## Usage
@@ -46,5 +52,5 @@ loggerWithStaticInfo.info("Goodbye!");
 Feel free to contribute - pull requests and issues are welcome :)
 
 ## LICENSE
-
-SEE LICENSE FILE
+MIT License
+[SEE LICENSE FILE](LICENSE)
