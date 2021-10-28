@@ -1,6 +1,6 @@
 {
   "name": "pure-console-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Yet another simple console logger",
   "main": "lib/index.js",
   "scripts": {
@@ -9,16 +9,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Flowr-es/pure-console-logger"
+    "url": "https://github.com/flowr-es/pure-console-logger"
   },
   "keywords": [
-    "logger"
+    "logger",
+    "console",
+    "debug",
+    "logging",
+    "logs",
+    "tools"
   ],
   "author": {
     "name": "Carlos Knoke Flores",
     "email": "carlos@knoke.net"
   },
-  "license": "see LICENSE",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "@types/node": "^14.17.9",
