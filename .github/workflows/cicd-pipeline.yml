@@ -29,7 +29,7 @@ jobs:
     - run: npm test
     - name: Add .npmrc for publish
       shell: bash
-      run: cp ${GITHUB_WORKSPACE}/.github/workflow/.npmrc ${GITHUB_WORKSPACE}/
+      run: cp ${GITHUB_WORKSPACE}/.github/workflows/.npmrc ${GITHUB_WORKSPACE}/
     - name: Publish
       run: npm publish
 
